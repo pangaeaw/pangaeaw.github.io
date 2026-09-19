@@ -1,6 +1,176 @@
-<html>
-<h1>pangaeaw.github.io</h1>
-<h2>This is the public GitHub repo of Pangaea Wealth Pte. Ltd.</h2>
-  <br>
-This repository contains non-sensitive content which is enclosed/linked on messages of Pangaea Wealth to external recipients.
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pangaea Wealth Pte. Ltd. | GitHub</title>
+  <meta name="description" content="The GitHub presence of Pangaea Wealth Pte. Ltd.">
+  <style>
+    :root {
+      --mint: #9ad9c2;
+      --mint-deep: #5fb99b;
+      --coral: #c86567;
+      --charcoal: #3f3f3f;
+      --grey: #6b6b6b;
+      --bg: #fafafa;
+      --card: #ffffff;
+      --line: #e4e6e5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--charcoal);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+      padding: 20px 24px;
+    }
+
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: block;
+      height: 88px;
+      width: auto;
+    }
+
+    /* Hero */
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 72px 24px;
+      background:
+        radial-gradient(circle at 12% 20%, rgba(154, 217, 194, 0.28), transparent 45%),
+        radial-gradient(circle at 90% 85%, rgba(154, 217, 194, 0.18), transparent 40%),
+        var(--bg);
+    }
+
+    .hero-inner {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .card {
+      max-width: 720px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--mint);
+      border-radius: 6px;
+      padding: 48px 48px 44px;
+      box-shadow: 0 10px 30px rgba(63, 63, 63, 0.06);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      color: var(--coral);
+      font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+      font-weight: 300;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin: 0 0 24px;
+      color: var(--charcoal);
+      font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    .rule {
+      width: 56px;
+      height: 3px;
+      margin: 0 0 24px;
+      background: var(--mint);
+      border: 0;
+    }
+
+    p {
+      margin: 0 0 32px;
+      color: var(--grey);
+      font-size: 1.05rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--mint);
+      color: #000;
+      font-size: 0.95rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.2s ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      background: var(--mint-deep);
+    }
+
+    .button:focus-visible {
+      outline: 2px solid var(--charcoal);
+      outline-offset: 3px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px 24px;
+      border-top: 1px solid var(--line);
+      color: var(--grey);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .logo { height: 68px; }
+      .hero { padding: 40px 16px; }
+      .card { padding: 32px 24px 30px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <img class="logo" src="pangaea-logo.png" alt="Pangaea Wealth">
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-inner">
+      <div class="card">
+        <h1>pangaeaw.github.io</h1>
+        <h2>This is the GitHub presence of Pangaea Wealth Pte. Ltd.</h2>
+        <hr class="rule">
+        <p>This repository contains non-sensitive content which is enclosed/linked on messages of Pangaea Wealth to external recipients.</p>
+        <a class="button" href="https://www.pangaea-wealth.com">Visit our website</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; Pangaea Wealth Pte. Ltd.
+  </footer>
+</body>
+</html>
